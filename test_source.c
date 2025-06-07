@@ -1,6 +1,11 @@
 int
-main(int mog, int mog)
+main(int argc, char *argv[])
 {
-    int a  0;
-    return 0;
+	FILE *file = fopen(argv[1], "r");
+    if(!file){
+       	fprintf(stderr, "Failed to open file: %s\n", argv[1]);
+       	return -1;}
+	token_llarr_s *tokens = tokenize_c(file);
+	//free(tokens);
+	return 0;
 }

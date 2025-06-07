@@ -8,6 +8,8 @@
 
 #define DARR_SIZE 1024
 #define DB_SIZE 128
+#define IS_SEPARATOR(p1) p1 == ';' || p1 == '(' || p1 == ')' || p1 == '{' || p1 == '}' || p1 == ','
+#define IS_OPERATOR(p1) p1 == '=' || p1 == '+' || p1 == '-' || p1 == '*' || p1 == '/' || p1 == '[' || p1 == ']'  || p1 == '&' || p1 == '%' || p1 == '.' || p1 == '<' || p1 == '>' || p1 == '!'
 
 typedef enum TOKEN_E{
     TOKEN_IDENTIFIER,

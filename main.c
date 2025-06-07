@@ -9,6 +9,6 @@ main(int argc, char *argv[])
        	fprintf(stderr, "Failed to open file: %s\n", argv[1]);
        	return -1;}
 	token_llarr_s *tokens = tokenize_c(file);
-	//free(tokens);
+	//free
 	return 0;
 }
